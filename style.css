@@ -1,0 +1,271 @@
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+
+a {
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    transition: color .2s linear;
+}
+
+a:hover {
+    color: grey;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px   ;
+    background: #ffffff;
+    border: grey 3px solid;
+    align-items: center;
+}
+
+.main h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main input {
+    margin: 10px 2px;
+    border: 0;
+    border-left: gray 1px solid;
+    border-bottom: gray 1px solid;
+    padding: 5px;
+    outline: none;
+}
+
+.main button {
+
+    width: 100px;
+    padding: 5px;
+    text-transform: uppercase;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    background: gray;
+    color: white;
+    text-align: center;
+    transition: all .2s linear;
+}
+
+.main button:hover {
+    color: grey;
+    background: white;
+}
+
+.link {
+
+    width: 100px;
+    padding: 5px;
+    text-transform: uppercase;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    background: gray;
+    color: white;
+    text-align: center;
+    transition: all .2s linear;
+}
+
+.link:hover {
+    color: grey;
+    background: white;
+}
+
+.title {
+    color: #000000;
+}
+
+.header {
+    margin: 10px 50px;
+}
+
+.exit {
+    padding: 10px;
+    color: white;
+    background: darkblue;
+    transition: all .2s linear;
+}
+
+.exit:hover {
+    color: darkblue;
+    background: white;
+}
+
+#add__offer {
+    background: rgba(102, 102, 102, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#add__offer_window {
+    z-index: 100000;
+    width: 700px;
+    height: 333px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+    color: cornflowerblue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+}
+#add__offer:target {display: block;}
+
+.add__offer_buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    align-items: center;
+}
+
+#massage {
+    resize: none;
+    width: 650px;
+    height: 125px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background-image: none;
+    border: none;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.add__post__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.offer__button {
+    color: white;
+    padding: 10px;
+    background: darkblue;
+    position: absolute;
+    top: 40px;
+    left: 856px;
+}
+
+.input__wrapper {
+    margin: 10px;
+}
+
+.add__offer_buttons a, .add__offer_buttons button {
+    height: 30px;
+    display: flex;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    padding: 0px 10px;
+    background: cornflowerblue;
+    align-items: center;
+}
+
+.add__offer_buttons button:hover {
+    opacity: 0.8;
+}
+
+.offer__button a {
+    color: white;
+}
+
+.offer__button a:hover {
+    opacity: 0.8;
+}
+
+.news {
+    display: flex;
+    margin: 30px 30px 0;
+    border-bottom: dimgrey 1px solid;
+    padding: 20px 0;
+}
+
+.news__avatar {
+    margin-right: 15px;
+}
+
+.news__content {
+    position: relative;
+}
+
+.news__content img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news__avatar img {
+    width: 78px;
+    height: 78px;
+}
+
+.news__user {
+    color: darkblue;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.feedback {
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.feedback img {
+    width: 30px;
+    height: 30px;
+}
+
+.feedback div {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    user-select: none;
+}
+
+.like {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    display: flex;
+    margin-right: 30px;
+}
+
+.dislike {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    display: flex;
+    margin-top: 5px;
+}
+
+.offer__news {
+    height: 30px;
+}
